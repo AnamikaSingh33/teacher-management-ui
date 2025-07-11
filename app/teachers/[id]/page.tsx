@@ -1,14 +1,13 @@
-import { type Metadata } from 'next';
 import QualificationTable from '../../components/QualificationTable';
 import ScheduleGrid from '../../components/ScheduleGrid';
 
-interface PageProps {
+type TeacherDetailPageProps = {
   params: {
     id: string;
   };
-}
+};
 
-export default function TeacherDetailPage({ params }: PageProps) {
+export default function TeacherDetailPage({ params }: TeacherDetailPageProps) {
   return (
     <div className="space-y-6">
       {/* Teacher Info Section */}
